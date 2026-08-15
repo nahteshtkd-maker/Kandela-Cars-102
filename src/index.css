@@ -1,0 +1,40 @@
+@import "tailwindcss";
+
+@theme {
+  --font-sans: 'Plus Jakarta Sans', system-ui, -apple-system, sans-serif;
+  --font-display: 'Syne', 'Plus Jakarta Sans', system-ui, sans-serif;
+
+  /* Kandela Cars bright theme — custom named tokens (not overriding built-in
+     Tailwind colors like `red` or `white`, which would silently confuse any
+     future component that uses the standard palette). Use these via
+     bg-kandela-red, text-kandela-ink, border-kandela-border, etc. */
+  --color-kandela-red: #E30613;
+  --color-kandela-red-hover: #FF1E2D;
+  --color-kandela-ink: #111111;
+  --color-kandela-muted: #6B7280;
+  --color-kandela-border: #E5E7EB;
+  --color-kandela-surface: #F5F6F8;
+  --color-kandela-surface-soft: #F9FAFB;
+}
+
+@layer base {
+  body {
+    font-family: var(--font-sans);
+    background-color: #ffffff;
+    color: #111111;
+  }
+
+  h1, h2, h3, .font-heading {
+    font-family: var(--font-display);
+  }
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(4px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+.animate-fadeIn {
+  animation: fadeIn 0.25s ease-out forwards;
+}
+

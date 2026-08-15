@@ -1,0 +1,6 @@
+{
+  "name": "Kandela Cars",
+  "description": "Premium Ethiopian automobile dealership and car marketplace with complete inventory management and admin dashboard.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
